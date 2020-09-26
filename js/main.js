@@ -9,6 +9,11 @@ showGiftBtn.addEventListener('click', () => {
     document.querySelector('.greeting__inner').classList.add('gift-opened');
 });
 
+const greetingBack = document.querySelector('.greeting__back');
+greetingBack.addEventListener('click', () => {
+    document.querySelector('.greeting__inner').classList.remove('gift-opened');
+});
+
 const countDownDate = new Date("Sep 25, 2021 00:00:00").getTime();
 const x = setInterval(function() {
 

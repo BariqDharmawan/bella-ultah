@@ -21,7 +21,7 @@ body {
 .greeting {
     max-width: 500px;
     width: 80%;
-    height: 500px;
+    height: 600px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -41,33 +41,58 @@ body {
 .greeting__inner.gift-opened {
     transform: rotateY(180deg);
 }
+.greeting__inner.gift-opened .greeting__birthday-footer {
+    user-select: none;
+    opacity: 0;
+    visibility: hidden;
+}
 .greeting__birthday, .greeting__gofood {
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
+    left: 0;
     height: 100%;
     backface-visibility: hidden;
 }
 .greeting__birthday {
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     color: #fff;
     padding: 25px 0;
+    justify-content: space-evenly;
     background-color: #1B2E47;
 }
 .greeting__gofood {
     color: #000;
-    box-shadow: 0 0 7px 7px rgba(255, 255, 255, 0.3);
     transform: rotateY(180deg);
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    flex-direction: column;
+    background-color: #1B2E47;
+}
+.greeting__back {
+    color: #46cfe3;
+    position: absolute;
+    bottom: 20px;
+    text-decoration: none;
+}
+.greeting__back:hover {
+    text-decoration: underline;
 }
 .greeting__gofood img {
-    height: 100%;
+    height: 350px;
+    object-fit: scale-down;
+}
+.greeting__gofood p {
+    text-align: center;
+    color: #fff;
+}
+.greeting__gofood p span {
+    display: block;
+    font-size: 2rem;
 }
 .greeting__primary {
     text-align: center;
@@ -97,16 +122,17 @@ body {
 .greeting__birthday-footer {
     position: absolute;
     bottom: 0;
-    justify-content: center;
     left: 0;
     padding: 5px 1rem;
     background-color: #db3131;
     width: 100%;
-    display: flex;
-    align-items: center;
+    text-align: center;
     margin: 0;
     color: #fff;
     text-decoration: none;
+}
+.greeting__birthday-footer i {
+    font-size: 1.1em;
 }
 .greeting__birthday-footer:hover {
     background-color: #c92b2b;
