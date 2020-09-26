@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background-image: url("../img/3250645.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.greeting {
+    max-width: 500px;
+    width: 80%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    transform-style: preserve-3d;
+}
+.greeting__inner {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+}
+.greeting__inner.gift-opened {
+    transform: rotateY(180deg);
+}
+.greeting__birthday, .greeting__gofood {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.greeting__birthday {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding: 25px 0;
+    background-color: #1B2E47;
+}
+.greeting__gofood {
+    color: #000;
+    box-shadow: 0 0 7px 7px rgba(255, 255, 255, 0.3);
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+.greeting__gofood img {
+    height: 100%;
+}
+.greeting__primary {
+    text-align: center;
+    color: #EC7557;
+}
+.greeting__to {
+    letter-spacing: 3px;
+    display: block;
+    margin-top: 25px;
+    color: #D9C9AB;
+    font-family: 'Dancing Script', cursive;
+}
+.greeting__wish {
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+}
+#greeting__small-wish {
+    background-color: #F47C98;
+}
+#open-gift {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+.greeting__birthday-footer {
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    left: 0;
+    padding: 5px 1rem;
+    background-color: #db3131;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: #fff;
+    text-decoration: none;
+}
+.greeting__birthday-footer:hover {
+    background-color: #c92b2b;
+}
+
+.next-birthday {
+    margin-top: 20px;
+    padding: 5px 1rem;
+    color: #fff;
+    background-color: #1B2E47;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+.next-birthday p {
+    margin: 0;
+}
