@@ -1,7 +1,6 @@
 const typed = new Typed("#greeting__small-wish", {
     strings: ["have a great day", "be happy"],
     loop: true,
-    shuffle: true,
     backDelay: 2000,
 });
 

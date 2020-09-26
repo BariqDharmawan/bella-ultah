@@ -1,0 +1,22 @@
+{
+  "name": "bella-ultah",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BariqDharmawan/bella-ultah.git"
+  },
+  "author": "Bariq Dharmawan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BariqDharmawan/bella-ultah/issues"
+  },
+  "homepage": "https://github.com/BariqDharmawan/bella-ultah#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.2"
+  }
+}
